@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="main.css" />
+    <script src="codigo.js"></script>
+    <title>Hotel Caranthir</title>
+  </head>
+  <body>
+    <div id="navegador">
+    <div id="contenedor">
+    <div id="menu-div">
+      <nav id="menu">
+        <ul>
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#informacion">Habitaciones</a></li>
+          <li><a href="#titulo-1">¿Quienes somos?</a></li>
+          <li><a href="#qs">Contacto</a></li>
+        </ul>
+        </div>
+      </nav>
+    </div>
+  </div>
+    <header>
+      <div id="contenido-div">
+        <h1 id="titulo-ini">Hotel Caranthir</h1>
+        <p id="parrafo-ini">Un lugar como tranquilo agradable donde desconectar de todo.</p>
+        <video autoplay>
+            <source src="./img/pexels-mikhail-nilov-9431937.mp4" type="video/mp4">
+            <source src="./img/pexels-mikhail-nilov-9431937.mp4" type="video/ogg">
+            Tu navegador no es compatible con este video
+        </video>
+        <div class="clearfix"></div>
+    </div>
+    </header>
+    <section id="informacion">
+      <div id="formulario">
+        <h1>¿Necesitas Ayuda?</h1>
+        <form action="" method="get">
+            <div class="form">
+                <label for="nombre">Nombre</label>
+                <input type="text" name="nombre" placeholder="nombre" required>
+            </div>
+            <div class="form">
+                <label for="apellidos">Apellidos</label>
+                <input type="text" name="apellidos" placeholder="apellidos" required>
+            </div>
+            <div class="form">
+                <label for="edad">Edad</label>
+                <input type="text" name="edad" placeholder="edad" required>
+            </div>
+            <div class="form">
+                <label for="email">Correo</label>
+                <input type="text" name="correo" placeholder="correo" required>
+            </div>
+                <div class="form">
+                <label for="menaje">Mensaje(opcional)</label>
+                <textarea name="mensaje" cols="30" rows="10" placeholder="escriba su mensaje aqui..." ></textarea>
+            </div>
+            <div class="form radio">
+                    <input type="radio" value="Hombre">Hombre
+                    <input type="radio" value="Mujer">Mujer
+                    <input type="radio" value="Otro">Otro
+            </div>
+            <input type="submit" value="Enviar" class="boton">  
+            <div class="clearfix"></div>
+        </form>
+      </div>
+      <div id="separacion">
+        <h2 id="galery">Galeria de Imagenes del Hotel</h2>
+      <div id="contenido">
+        <img src="./img/habitacion2.jpg" alt="habitacion" class="caja">
+        <img src="./img/recepcion.jpg" alt="recepcion" class="caja">
+        <img src="./img/restaurante.jpg" alt="restaurante" class="caja">
+        <img src="./img/zonas-comunes.jpg" alt="zona comun" class="caja">
+        <img src="./img/zonas-comunes2.jpg" alt="zona comun" class="caja">
+        <img src="./img/aseo.jpg" alt="baño" class="caja">
+    </div>
+  </div>
+    </section>
+<section id="descripcion">
+  <div id="Servicios">
+  <h2 id="titulo-1" class="categorias">¿Quienes somos? </h2>
+  <p id="pr-ct" >Lorem ipsum dolor 1950 voluptatibus architecto, omnis neque repellat cumque distinctio sit facilis, incidunt provident inventore, ratione debitis culpa. Excepturi ea suscipit voluptate? Exercitationem possimus optio repudiandae dolores ratione.</p>
+  <br/>
+  <h2 id="titulo-2" class="categorias">Nuestros Servicios</h2>
+  <div class="wrap">
+    <div id="one" class="categorias">Lavandería/limpieza</div>
+    <div id="two" class="categorias">Actividades</div>
+    <div id="three" class="categorias">recepcion</div>
+    <div id="four" class="categorias">Cafeteria/restarante</div>
+    <div id="five" class="categorias">Piscina</div>
+    <div id="six" class="categorias">Wifi</div>
+</div>
+<img src="./img/household.png" alt="lavanderia" id="lv" class="fav-ico"/>
+<img src="./img/mental-health.png" alt="actividades" id="ac" class="fav-ico"/>
+<img src="./img/recepcionista.png" alt="recepcion" id="rp"class="fav-ico">
+<img src="./img/restaurant.png" alt="restaurante" id="cr" class="fav-ico">
+<img src="./img/swimming-pool.png" alt="piscina" id="ps" class="fav-ico">
+<img src="./img/logotipo-de-wifi.png" alt="wifi" id="wf" class="fav-ico">
+</section>
+<section>
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d46405.72345249064!2d-5.883677342905601!3d43.369543902475904!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd368c9a60ac1c67%3A0x3134440ecc5e6224!2sOviedo%2C%20Asturias!5e0!3m2!1ses!2ses!4v1652107116848!5m2!1ses!2ses" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</section>
+<section id="qs">
+  <h4 class="qs-pr">Estamos en todo momento para lo que necesites</h4>
+  
+  <div id="contact">
+  <img src="./img/telefono.png" alt="telefono" id="tl"><a href="tel:987654321" class="icn">987654321</a>
+  <img src="./img/instagram.png" alt="instagram" id="ig"><a href="https://www.instagram.com/" class="icn">@HotelCarantir</a>
+  <img src="./img/email.png" alt="email" id="em"><a href="mailto:info@hotelcarantir.com" class="icn">info@hotelcarantir.com</a>
+</div>
+<h5 class="qs-txt">¡Contactanos!, ¿A que esperas?</h5>
+</section>
+<footer>
+  Todos los Derechos Reservados | Pagina creada por Silkaleex &copy;
+</footer>
+  </body>
+</html>
