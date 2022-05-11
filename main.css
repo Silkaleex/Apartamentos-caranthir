@@ -78,129 +78,65 @@ body {
     padding:4px 20px;
     transition: 1s all;
   }
-/*Contenido*/
-header{
-    clear:both;
-    float:none;
-    margin-left: 35%;
+/*Principal*/
+#principal{
+  width: 100%;
+  padding: 15% 25%;
+  height:auto;
+  background-image: url(./img/hotel-caranthir.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
 }
-#contenido-div{
-    margin:0px auto;
-    clear:both;
+#en-pr{
+  background-color: #bed6f16d;
 }
-#titulo-ini{
-    font-size: 30px;
-    color:var(--fondo);
-    font-weight: bold;
-    background-color:#4CAF50;
-    width:200px;
-    margin-top:300px;
-
+.entrada{
+  padding:0% 10% 0% 10%;
+  font-size:30px;
+  font-family: Tahoma, sans-serif;
+  color:rgb(0, 0, 0);
+  width: 100%;
+  letter-spacing: 1px;
 }
-#parrafo-ini{
-    font-size: 30px;
-    color: var(--fondo);
-    transform: translate(-150px, 0px);
-    font-weight: 100;
-    background-color:#4CAF50;
-    width:825px;
-    
+.parrafo{
+  padding:0% 15% 20px 15%;
+  font-size:20px;
+  font-family:Tahoma, sans-serif;
+  color:black;
+  width: 100%;
+  letter-spacing: 1px;
 }
-video {
-  margin-top: -20px;
-    position: absolute;
-    left: 0;
-    top: 0;
-    height: 120%;
-    width: 101%;
-    z-index: -1;
-  }
-  /*seccion informacion*/
-  #informacion{
-    transform: translate(0px, 405px);
-  }
-  #separacion{
-    width: 3px;
-    height: 800px;
-    background-color: rgba(0, 0, 0, 0.429);
-    transform: translate(700px, -560px);
-  }
-/*formulario*/
-#formulario {
-    width: 35%;
-    margin-top: 10px;
+.rainbow-button {
+  width:250px;
+  height:40px;
+  border-radius:5px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-transform:uppercase;
+  text-decoration:none;
+  font-size:20px;
+  font-weight:bold;
+  color: black;
+  background-color: #58a5f7f9;
+  border-radius: 50%;
 }
-h1 {
-  text-align: left;
-  margin-left: 100px;
+.rainbow-button:after {
+  content:attr(alt);
+  display:flex;
+  align-items:center;
+  justify-content:center; 
 }
-hr {
-  margin-left: 100px;
-}
-.form {
-  width: 250%;
-  margin: 0px auto;
-  margin-left: 20%;
-}
-.form label {
-  display: block;
-  text-align: left;
-  margin-top: 10px;
-  margin-bottom: 5px;
-  font-size: 17px;
-}
-input[type="text"],
-textarea {
-  width: 50%;
-  min-height: 20px;
-  border: 1px solid #ccc;
-  padding: 3px;
-  margin-bottom: 5px;
-  transition: 300ms all;
+.rainbow-button:hover {
+  animation:slidebg 2s linear infinite;
+  background-image: linear-gradient(90deg, #00C0FF 0%, #FFCF00 49%, #FC4F4F 80%, #00C0FF 100%);
 }
 
-.radio {
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
-.boton {
-  margin-bottom: 20px;
-  padding: 5px 10px;
-  margin-left: 100px;
-  background-color: #4CAF50;
-  border: none;
-  color: white;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  transition:1s all;
-}
-
-.boton:hover{
-    background-color: var(--color-letra);
-    color: white;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    transition:1s all;
-}
-/*imagenes*/
-#galery{
-  width: 330px;
-  transform: translate(190px, -27px);
-  padding:10px;
-}
-.caja{
-  width: 180px;
-  height: 180px;
-}
-#contenido{
-display: grid;
-grid-template-columns: repeat(3, 1fr);
-gap:10px 10px;
-margin-left: 50px;
+@keyframes slidebg {
+  to {
+    background-position:20vw;
+  }
 }
 /*Servicios*/
 #titulo-1{
@@ -214,9 +150,8 @@ margin-bottom: 10px;
   margin-bottom: 20px;
   }
 #descripcion{
-background-color: #00f7ff75;
-padding:2% 25%;
-margin-top:-100px;
+padding:5% 25%;
+background-color: #68B3DF;
 }
 #servicios{
   list-style: none;
@@ -325,7 +260,8 @@ margin-top:-100px;
 #qs{
   background-color: #F4F4F9;
   width: 100%;
-  height: 450px;
+  height: auto;
+  padding:5% 0%;
 }
 .qs-pr{
   padding-top: 10px;
@@ -441,4 +377,85 @@ footer{
   width: 50px;
   height: 50px;
   transform: translate(10px, 10px);
+}
+/*Formulario*/
+#formulario{
+  padding: 5% 0%;
+  background-color: #97fbfb;
+}
+#pr-fm{
+  text-align: center;
+  font-family: "roboto";
+  font-weight: bold;
+  font-size: 30px;
+  padding: 5% 20%;
+  margin: 0% 20%;
+}
+form{
+  font-family: "Roboto";
+	width:500px;
+	padding:3% 5%;
+	border-radius:20px;
+	margin:auto;
+	background-color:#6890fe;
+}
+
+form label{
+	width:72px;
+	font-weight:bold;
+	display:inline-block;
+}
+
+form input[type="text"],
+form input[type="email"]{
+	width:180px;
+	padding:3px 150px;
+	border:1px solid #f6f6f6;
+	border-radius:3px;
+	background-color:#f6f6f6;
+	margin:8px 0;
+	display:inline-block;
+}
+
+form input[type="submit"]{
+	width:100%;
+	padding:8px 16px;
+	margin-top:32px;
+	border:1px solid #000;
+	border-radius:5px;
+	display:block;
+	color:#fff;
+	background-color:#000;
+  transition: 2s;
+  font-family:"Roboto";
+  font-weight:bold;
+  font-size:15px;
+} 
+
+form input[type="submit"]:hover{
+	cursor:pointer;
+  background-color:rgb(255, 255, 255);
+  border: 1px solid white;
+  color:black;
+  border-radius: 10px;
+  transition: 2s;
+  font-family:"Roboto";
+  font-weight:bold;
+  font-size:15px;
+}
+
+textarea{
+	width:100%;
+	height:100px;
+	border:1px solid #f6f6f6;
+	border-radius:3px;
+	background-color:#f6f6f6;			
+	margin:8px 0;
+	/*resize: vertical | horizontal | none | both*/
+	resize:none;
+	display:block;
+}
+.flecha{
+  width:40px;
+  height:40px;
 }
