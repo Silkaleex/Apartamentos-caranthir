@@ -107,6 +107,7 @@ body {
   width: 100%;
   letter-spacing: 1px;
 }
+/*Boton ayuda*/
 .rainbow-button {
   width:250px;
   height:40px;
@@ -138,12 +139,42 @@ body {
     background-position:20vw;
   }
 }
-/*Servicios*/
-#titulo-1{
-font-size: 25px;
-font-weight: bold;
-margin-bottom: 10px;
+/*¿Quienes Somos?*/
+.sect {
+  width: 100%;
+  min-height: 500px;
 }
+#sect1 {
+  background-color: #3333337d;
+  color: #fff;
+  position: relative;
+  overflow: hidden;
+}
+
+#video_background {
+
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -1000;
+  overflow: hidden;
+  }
+.qs{
+  margin: 0;
+  padding:3rem 43%;
+  height: 100%;
+  font-weight: bold;
+}
+.qsp{
+  margin: 0;
+  padding:0% 15%;
+  font-weight: 700;
+}
+/*Servicios*/
 #titulo-2{
   font-size: 25px;
   font-weight: bold;
@@ -153,18 +184,11 @@ margin-bottom: 10px;
 padding:5% 25%;
 background-color: #68B3DF;
 }
-#servicios{
-  list-style: none;
-  text-decoration:none;
-  text-align: center;
-}
 .categorias{
   list-style: none;
   line-height: 30px;
 }
-#pr-ct {
-  line-height: 30px;
-}
+
 .wrap{
   display: grid;
   grid-template-columns: repeat(3, 1fr);
