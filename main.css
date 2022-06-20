@@ -24,7 +24,6 @@ html {
 body {
   padding: 0px;
   margin: 0px;
-  background-color: var(--fondo);
   font-family: "Roboto", sans-serif;
   overflow-x: hidden;
 }
@@ -45,7 +44,7 @@ body {
   display:flex;
 }
 #menu-div {
-  width: 95%;
+  width: 100%;
 }
 #menu {
   width: 70%;
@@ -61,27 +60,26 @@ body {
   display: inline-block;
   list-style: none;
   height: 46px;
-  margin-left: 15px;
-  margin-right: 15px;
+  transform: translate(-150px, 0px);
 }
 #menu a {
   text-decoration: none;
   color: var(--color-letra);
   background-color: var(--color-letra2);
-  padding:4px 20px;
+  padding:4px 30px;
   transition: 1s all;
 }
 #menu a:hover {
     text-decoration: none;
     color: var(--color-letra2);
     background-color: var(--color-letra);
-    padding:4px 20px;
+    padding:4px 30px;
     transition: 1s all;
   }
 /*Principal*/
 #principal{
   width: 100%;
-  padding: 15% 25%;
+  padding: 20% 25%;
   height:auto;
   background-image: url(./img/hotel-caranthir.jpg);
   background-size: cover;
@@ -89,21 +87,22 @@ body {
   background-attachment: fixed;
 }
 #en-pr{
-  background-color: #bed6f16d;
+  background-color: #6267f76d;
+  color:#ffff;
+  padding:20px 0px;
+  line-height: 40px;
 }
 .entrada{
-  padding:0% 10% 0% 10%;
+  padding:0% 10% 0% 5%;
   font-size:30px;
   font-family: Tahoma, sans-serif;
-  color:rgb(0, 0, 0);
   width: 100%;
   letter-spacing: 1px;
 }
 .parrafo{
-  padding:0% 15% 20px 15%;
+  padding:0% 15% 20px 5%;
   font-size:20px;
   font-family:Tahoma, sans-serif;
-  color:black;
   width: 100%;
   letter-spacing: 1px;
 }
@@ -152,7 +151,6 @@ body {
 }
 
 #video_background {
-
   position: absolute;
   bottom: 0px;
   right: 0px;
@@ -165,7 +163,7 @@ body {
   }
 .qs{
   margin: 0;
-  padding:3rem 43%;
+  padding:2rem 43%;
   height: 100%;
   font-weight: bold;
 }
@@ -173,16 +171,21 @@ body {
   margin: 0;
   padding:0% 15%;
   font-weight: 700;
+  line-height: 25px;
 }
 /*Servicios*/
 #titulo-2{
   font-size: 25px;
   font-weight: bold;
   margin-bottom: 20px;
+  color:white;
   }
 #descripcion{
 padding:5% 25%;
-background-color: #68B3DF;
+background-image: url(./img/fondo.jpg);
+background-size: cover;
+background-attachment: fixed;
+background-position: center;
 }
 .categorias{
   list-style: none;
@@ -280,12 +283,22 @@ background-color: #68B3DF;
 #wf{
   transform: translate(260px, -121px);
 }
+/*Mapa*/
+iframe{
+  padding:0% 0%;
+}
 /*Quienes Somos*/
 #qs{
-  background-color: #F4F4F9;
+  background-image: url(./img/contactar.png);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
   width: 100%;
   height: auto;
   padding:5% 0%;
+}
+#contenido{
+  background-color: #e6ecf160;
 }
 .qs-pr{
   padding-top: 10px;
@@ -330,7 +343,7 @@ background-color: #68B3DF;
   cursor:pointer;
   text-align:center;
   text-decoration: none;
-  background-image: linear-gradient(#a8c0ff, #00fff2);
+  background-image: linear-gradient(#CACCD7, #D7D6DC);
   background-position: 0% 100%;
   background-repeat: no-repeat;
   background-size: 0% 2px;
@@ -341,7 +354,7 @@ background-color: #68B3DF;
   font-weight: bold;
   font-size: 25px;
   text-decoration: none;
-  color:#0011c8;
+  color:#380036;
   transition: 2s all;
   transform: translate(-125px, 0px);
   cursor:pointer;
@@ -405,15 +418,31 @@ footer{
 /*Formulario*/
 #formulario{
   padding: 5% 0%;
-  background-color: #97fbfb;
+  background-image: url(./img/duda.png);
+  background-position: center;
+  background-size: cover;
+  filter:  sepia(1) ;
+
+}
+#contacto{
+
+  margin: 0px auto;
+  padding: 5% 10%;
+  color:white;
+}
+.flecha{
+  filter:  sepia(1) ;
 }
 #pr-fm{
   text-align: center;
   font-family: "roboto";
   font-weight: bold;
   font-size: 30px;
-  padding: 5% 20%;
-  margin: 0% 20%;
+  padding: 2% 0%;
+  margin: 2% 40%;
+  width: 280px;
+  border-radius:10px;
+  background-color: rgba(110, 104, 104, 0.222);
 }
 form{
   font-family: "Roboto";
@@ -421,7 +450,7 @@ form{
 	padding:3% 5%;
 	border-radius:20px;
 	margin:auto;
-	background-color:#6890fe;
+	background-color:rgba(110, 104, 104, 0.708);
 }
 
 form label{

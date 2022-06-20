@@ -6,15 +6,30 @@ body {
   font-family: "roboto";
 }
 #seccion1 {
-  background-color: #bfd7ea;
   padding: 50px;
   line-height: 40px;
+  background-image: url(./img/recepcion.jpg);
+  background-size: cover;
+  background-attachment: fixed;
 }
-
+.estilo {
+  background-color: #8f9ae993;
+  padding: 40px 20px;
+  border-radius: 50px;
+}
+#mapa {
+  background-image: url(./img/mapa.jpg);
+  background-position: center;
+  background-size: cover;
+  padding: 20px 0px 80px 0px;
+}
 #seccion2 {
-  background-color: #8f9ae9;
+  background-image: url(./img/zonas-comunes2.jpg);
   padding: 50px;
   line-height: 40px;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
 }
 
 h1 {
@@ -28,6 +43,7 @@ h2 {
 p {
   font-size: 15px;
   padding: 0% 15%;
+  font-weight: 800;
 }
 .es-img {
   width: 200px;
